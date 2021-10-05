@@ -44,11 +44,9 @@ flex-grow: 1;
     width: 100%;
     object-fit: cover;
     transition: all 0.5s ease-in-out;
-    filter: grayscale(100%);
 }
 .galeria-itens:hover img{
     transform: scale(1.3) rotate(10deg);
-    filter: grayscale(0%);
 }
 
 footer{
@@ -84,7 +82,6 @@ height: 5vh;
 
 .slide .fechar{
     position: absolute;
-   background-color: black;
     top: 0;
     right: 0;
     width: 40px;
@@ -96,16 +93,16 @@ height: 5vh;
     text-decoration: none;
     color: white;    
     z-index: 4;
-
+    transition: all linear 0.3s; 
 }
 
 .slide .fechar:hover{
-    background-color: red;
+    background-color: red;  
+   
 }
 
 .slide .navegacao{
     position: absolute;
-    background-color: #0005;
     color: white;
     font-size: 3rem;
     width: 40px;
@@ -115,10 +112,9 @@ height: 5vh;
     justify-content: center;
     text-decoration: none;
     transition: all linear 0.3s; 
-    opacity: 0;
 }
 .slide .navegacao:hover{
-    background-color: red;
+    background-color: #0005;
 }
 
 .slide .anterior{
